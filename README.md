@@ -6,8 +6,7 @@ This repository contains the lab setup, captures, and notes for the ApexPlanet i
 - `screenshots/` — screenshots of Kali, Metasploitable, Wireshark captures.
 - `captures/` — saved pcap files from Wireshark.
 - `linux_cheatsheet.md` — compact Linux command reference.
-- `video/lab_walkthrough
-
+- 
 ## Quick commands used
 - Show IP: `ip a`
 - Ping: `ping -c 5 <target>`
