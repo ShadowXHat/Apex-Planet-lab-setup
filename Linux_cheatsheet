@@ -1,0 +1,42 @@
+# Linux Cheat-sheet (Kali & general)
+
+## System & user
+- Show IP: `ip a`
+- Hostname: `hostname`
+- Current user: `whoami`
+- Switch user: `sudo -i`
+- List processes: `ps aux | less`
+- Kill process: `kill <pid>` / `kill -9 <pid>`
+
+## Files & directories
+- List files: `ls`
+- Change dir: `cd /path/to/dir`
+- Copy / move / remove: `cp`, `mv`, `rm -rf`
+- Show file content: `cat file`, `less file`, `head -n 50 file`
+- Edit files: `nano file`
+
+## Permissions
+- Show perms: `ls -l`
+- Change perms: `chmod 755 file`
+- Change owner: `chown user:group file`
+
+## Networking
+- Resolve DNS: `dig example.com` or `nslookup example.com`
+- Test connectivity: `ping -c 4 <ip>`
+- TCP/UDP scan (nmap): `nmap -sC -sV -oN out.txt <target>`
+- List open ports (local): `ss -tuln` or `netstat -tnlp`
+
+## Package management (Debian)
+- Update: `sudo apt update`
+- Upgrade: `sudo apt upgrade -y`
+- Install: `sudo apt install -y <pkg>`
+
+## Useful tools
+- curl: `curl -v http://<ip>/`
+- wget: `wget http://<ip>/file`
+- ssh: `ssh user@host`
+- grep: `grep -i 'pattern' file`
+- find: `find / -name '*.conf' 2>/dev/null | less`
+
+## Quick file transfer (between host & VM)
+- From host to VM (if SSH available): `scp file user@<vm_ip>:/tmp/`
